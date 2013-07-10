@@ -104,7 +104,7 @@ export CSV2RDF4LOD_CONVERTER=""
 # see https://github.com/timrdf/csv2rdf4lod-automation/wiki/Conversion-process-phase:-name
 #
 export CSV2RDF4LOD_BASE_URI="http://logd.tw.rpi.edu"
-export CSV2RDF4LOD_BASE_URI="http://lod.sociam.org/"
+export CSV2RDF4LOD_BASE_URI="http://lod.sociam.org"
 
 #
 # Customize: A base URI to use in place of CSV2RDF4LOD_BASE_URI
@@ -977,6 +977,6 @@ export DG_RETRIEVAL_CONVERT_RAW="true"
 export DG_RETRIEVAL_CONVERT_RAW="false" 
 
 # End of CSV2RDF4LOD_ variables
-export DATAFAQS_BASE_URI="http://lod.sociam.org/"
+export DATAFAQS_BASE_URI="http://lod.sociam.org"
 export DATAFAQS_PROVENANCE_CODE_RAW_BASE="https://raw.github.com/timrdf/DataFAQs/master"
 export DATAFAQS_PROVENANCE_CODE_PAGE_BASE="https://github.com/timrdf/DataFAQs/blob/master"

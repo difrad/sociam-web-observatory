@@ -10,3 +10,4 @@ export PATH=$PATH`/home/dd1y12/opt/prizms/bin/install/paths.sh`
 export CSV2RDF4LOD_HOME="/home/dd1y12/opt/prizms/repos/csv2rdf4lod-automation"
 export DATAFAQS_HOME="/home/dd1y12/opt/prizms/repos/DataFAQs"
 export JENAROOT=/home/dd1y12/opt/apache-jena-2.10.0
+export CLASSPATH=$CLASSPATH`/home/dd1y12/opt/prizms/bin/install/classpaths.sh`
