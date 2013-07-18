@@ -1,0 +1,24 @@
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix dcat:       <http://www.w3.org/ns/dcat#> .
+@prefix void:       <http://rdfs.org/ns/void#> .
+@prefix prov:       <http://www.w3.org/ns/prov#> .
+@prefix datafaqs:   <http://purl.org/twc/vocab/datafaqs#> .
+@prefix :           <http://lod.sociam.org/id/> .
+
+<http://lod.sociam.org/source/snap-stanford-edu/dataset/phrase-cluster>
+   a void:Dataset, dcat:Dataset;
+   conversion:source_identifier  "snap-stanford-edu";
+   conversion:dataset_identifier "phrase-cluster";
+   prov:wasDerivedFrom :download_4107f7c3-5ea4-48f2-b759-417e8e9b3e20;
+.
+
+:download_4107f7c3-5ea4-48f2-b759-417e8e9b3e20
+   a dcat:Distribution;
+   dcat:downloadURL <http://snap.stanford.edu/data/d/quotes/Old-UniqUrls/clust-qt08080902w3mfq5.txt.gz>;
+.
+
+<dataset/4107f7c3-5ea4-48f2-b759-417e8e9b3e20>
+   a dcat:Dataset;
+   dcat:distribution :download_4107f7c3-5ea4-48f2-b759-417e8e9b3e20;
+.

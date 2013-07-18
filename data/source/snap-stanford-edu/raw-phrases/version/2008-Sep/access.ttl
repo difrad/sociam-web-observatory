@@ -1,0 +1,24 @@
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix dcat:       <http://www.w3.org/ns/dcat#> .
+@prefix void:       <http://rdfs.org/ns/void#> .
+@prefix prov:       <http://www.w3.org/ns/prov#> .
+@prefix datafaqs:   <http://purl.org/twc/vocab/datafaqs#> .
+@prefix :           <http://localhost/id/> .
+
+<http://localhost/source/snap-stanford-edu/dataset/raw-phrases>
+   a void:Dataset, dcat:Dataset;
+   conversion:source_identifier  "snap-stanford-edu";
+   conversion:dataset_identifier "raw-phrases";
+   prov:wasDerivedFrom :download_b640b805-67c0-4b6f-a634-b42483cf8597;
+.
+
+:download_b640b805-67c0-4b6f-a634-b42483cf8597
+   a dcat:Distribution;
+   dcat:downloadURL <http://snap.stanford.edu/data/d/quotes/Old-UniqUrls/quotes_2008-09.txt.gz>;
+.
+
+<dataset/b640b805-67c0-4b6f-a634-b42483cf8597>
+   a dcat:Dataset;
+   dcat:distribution :download_b640b805-67c0-4b6f-a634-b42483cf8597;
+.
