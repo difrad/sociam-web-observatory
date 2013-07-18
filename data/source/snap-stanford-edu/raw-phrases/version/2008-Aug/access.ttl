@@ -4,21 +4,21 @@
 @prefix void:       <http://rdfs.org/ns/void#> .
 @prefix prov:       <http://www.w3.org/ns/prov#> .
 @prefix datafaqs:   <http://purl.org/twc/vocab/datafaqs#> .
-@prefix :           <http://localhost/id/> .
+@prefix :           <http://lod.sociam.org/id/> .
 
-<http://localhost/source/snap-stanford-edu/dataset/raw-phrases>
+<http://lod.sociam.org/source/snap-stanford-edu/dataset/raw-phrases>
    a void:Dataset, dcat:Dataset;
    conversion:source_identifier  "snap-stanford-edu";
    conversion:dataset_identifier "raw-phrases";
-   prov:wasDerivedFrom :download_fb1efb26-440f-4add-b5e0-226705406e2b;
+   prov:wasDerivedFrom :download_b4f50cda-796e-47f9-9641-b8ea7a5cf220;
 .
 
-:download_fb1efb26-440f-4add-b5e0-226705406e2b
+:download_b4f50cda-796e-47f9-9641-b8ea7a5cf220
    a dcat:Distribution;
    dcat:downloadURL <http://snap.stanford.edu/data/d/quotes/Old-UniqUrls/quotes_2008-08.txt.gz>;
 .
 
-<dataset/fb1efb26-440f-4add-b5e0-226705406e2b>
+<dataset/b4f50cda-796e-47f9-9641-b8ea7a5cf220>
    a dcat:Dataset;
-   dcat:distribution :download_fb1efb26-440f-4add-b5e0-226705406e2b;
+   dcat:distribution :download_b4f50cda-796e-47f9-9641-b8ea7a5cf220;
 .
