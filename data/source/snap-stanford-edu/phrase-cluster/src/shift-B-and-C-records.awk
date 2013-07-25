@@ -1,4 +1,4 @@
-#3> <> prov:specializationOf <> .
+#3> <> prov:specializationOf <https://github.com/difrad/sociam-web-observatory/blob/master/data/source/snap-stanford-edu/phrase-cluster/src/shift-B-and-C-records.awk> .
 
 BEGIN {
    FS="  " # Tab
