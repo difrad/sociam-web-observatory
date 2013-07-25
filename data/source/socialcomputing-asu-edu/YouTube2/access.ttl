@@ -1,0 +1,24 @@
+@prefix rdfs:       <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix conversion: <http://purl.org/twc/vocab/conversion/> .
+@prefix dcat:       <http://www.w3.org/ns/dcat#> .
+@prefix void:       <http://rdfs.org/ns/void#> .
+@prefix prov:       <http://www.w3.org/ns/prov#> .
+@prefix datafaqs:   <http://purl.org/twc/vocab/datafaqs#> .
+@prefix :           <http://lod.sociam.org/id/> .
+
+<http://lod.sociam.org/source/socialcomputing-asu-edu/dataset/YouTube2>
+   a void:Dataset, dcat:Dataset;
+   conversion:source_identifier  "socialcomputing-asu-edu";
+   conversion:dataset_identifier "YouTube2";
+   prov:wasDerivedFrom :download_ae417cf2-54f9-46af-9f89-3e810de9b8b4;
+.
+
+:download_ae417cf2-54f9-46af-9f89-3e810de9b8b4
+   a dcat:Distribution;
+   dcat:downloadURL <http://socialcomputing.asu.edu/uploads/1283158247/YouTube-dataset.zip>;
+.
+
+<dataset/ae417cf2-54f9-46af-9f89-3e810de9b8b4>
+   a dcat:Dataset;
+   dcat:distribution :download_ae417cf2-54f9-46af-9f89-3e810de9b8b4;
+.
