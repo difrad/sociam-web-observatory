@@ -35,7 +35,7 @@
 @prefix foaf:          <http://xmlns.com/foaf/0.1/> .
 @prefix ov:            <http://open.vocab.org/terms/> .
 @prefix conversion:    <http://purl.org/twc/vocab/conversion/> .
-@prefix :              <http://localhost/source/snap-stanford-edu/dataset/phrase-cluster/version/2013-Jul-25/params/enhancement/1/> .
+@prefix :              <http://lod.sociam.org/source/snap-stanford-edu/dataset/phrase-cluster/version/2013-Jul-25/params/enhancement/1/> .
 
 <http://tw.rpi.edu/instances/TimLebo> foaf:holdsAccount <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot> .
 <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>
@@ -52,10 +52,10 @@
 #   #conversion:type_name     "My Class";   # Can also be a URI, e.g. foaf:Person.
 #.
 
-<http://localhost/source/snap-stanford-edu/dataset/phrase-cluster/version/2013-Jul-25/conversion/enhancement/1>
+<http://lod.sociam.org/source/snap-stanford-edu/dataset/phrase-cluster/version/2013-Jul-25/conversion/enhancement/1>
    a conversion:LayerDataset, void:Dataset;
 
-   conversion:base_uri           "http://localhost"^^xsd:anyURI;
+   conversion:base_uri           "http://lod.sociam.org"^^xsd:anyURI;
    conversion:source_identifier  "snap-stanford-edu";
    conversion:dataset_identifier "phrase-cluster";
    conversion:version_identifier "2013-Jul-25";
@@ -66,7 +66,7 @@
       conversion:enhancement_identifier "1";
 
       dcterms:creator <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>;
-      dcterms:created "2013-07-25T13:31:40-04:00"^^xsd:dateTime;
+      dcterms:created "2013-07-25T13:41:53-04:00"^^xsd:dateTime;
 
 
       #conversion:enhance [
