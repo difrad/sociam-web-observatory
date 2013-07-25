@@ -93,6 +93,11 @@
       #   conversion:subclass_of <http://purl.org/...>;
       #];
       conversion:enhance [
+         conversion:fromCol 1;
+         conversion:toCol   9;
+         a conversion:Repeat_previous_if_empty_column;
+      ];
+      conversion:enhance [
          ov:csvCol          1;
          ov:csvHeader       "";
          #conversion:bundled_by [ ov:csvCol 1 ];
@@ -191,13 +196,15 @@
       conversion:enhance [
          ov:csvCol          9;
          ov:csvHeader       "Tm";
+         conversion:eg      "2008-08-18 14:23:05";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         conversion:label   "";
+         conversion:label   "Tm";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "time when the article/post <Url>: was published.";
          #conversion:range_template  "[/sd]thing[.]";
-         conversion:range   todo:Literal;
+         conversion:pattern "YYYY-MM-dd HH:mm:ss";
+         conversion:range   xsd:dateTime;
          #conversion:range_name  "Thing";
       ];
       conversion:enhance [
@@ -227,6 +234,7 @@
       conversion:enhance [
          ov:csvCol          12;
          ov:csvHeader       "Url";
+         #a conversion:Only_if_column;
          #conversion:bundled_by [ ov:csvCol 1 ];
          conversion:label   "Url";
          #conversion:equivalent_property dcterms:identifier;
