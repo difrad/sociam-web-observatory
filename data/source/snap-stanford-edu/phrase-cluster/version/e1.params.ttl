@@ -68,6 +68,7 @@
       dcterms:creator <http://purl.org/twc/id/machine/lebot/MacBookPro6_2#lebot>;
       dcterms:created "2013-07-25T13:50:08-04:00"^^xsd:dateTime;
 
+      prov:wasDerivedFrom <http://www.memetracker.org/data.html#cluster>;
 
       #conversion:enhance [
       #   ov:csvRow 2;
@@ -93,12 +94,144 @@
       #];
       conversion:enhance [
          ov:csvCol          1;
-         ov:csvHeader       "4	24898	hate that i love you so	36543";
+         ov:csvHeader       "";
          #conversion:bundled_by [ ov:csvCol 1 ];
-         #conversion:label   "4	24898	hate that i love you so	36543";
+         conversion:label   "ClSz";
          #conversion:equivalent_property dcterms:identifier;
          #conversion:subproperty_of      dcterms:identifier;
-         conversion:comment "";
+         conversion:comment "number of different phrases in the cluster (number of B records).";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          2;
+         ov:csvHeader       "TotFq";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "TotFq";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "total frequency (number of mentions) of all the phrases in the cluster.";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          3;
+         ov:csvHeader       "Root";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "Root";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "root phrase of the cluster. Representative phrase from the cluster of phrases.";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          4;
+         ov:csvHeader       "ClId";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "ClId";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "cluster id.";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          5;
+         ov:csvHeader       "QtFq";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "QtFq";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "total frequency (number of mentions) of the phrase.";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          6;
+         ov:csvHeader       "Urls";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "Urls";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "number of urls where the phrase appeared (number of C records).";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          7;
+         ov:csvHeader       "QtStr";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "QtStr";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "phrase string.";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          8;
+         ov:csvHeader       "QtId";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "QtId";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "phrase id.";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          9;
+         ov:csvHeader       "Tm";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "time when the article/post <Url>: was published.";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          10;
+         ov:csvHeader       "Fq";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "Fq";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "number of times phrase <QtStr>: was mentioned at the <Url>:.";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          11;
+         ov:csvHeader       "UrlTy";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "UrlTy";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "type of the url: B: blog, M: mainstream media.";
+         #conversion:range_template  "[/sd]thing[.]";
+         conversion:range   todo:Literal;
+         #conversion:range_name  "Thing";
+      ];
+      conversion:enhance [
+         ov:csvCol          12;
+         ov:csvHeader       "Url";
+         #conversion:bundled_by [ ov:csvCol 1 ];
+         conversion:label   "Url";
+         #conversion:equivalent_property dcterms:identifier;
+         #conversion:subproperty_of      dcterms:identifier;
+         conversion:comment "URL of the blog post/news article.";
          #conversion:range_template  "[/sd]thing[.]";
          conversion:range   todo:Literal;
          #conversion:range_name  "Thing";
