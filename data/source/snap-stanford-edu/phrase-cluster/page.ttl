@@ -12,3 +12,7 @@
    conversion:dataset_identifier "phrase-cluster";
    foaf:page <http://www.memetracker.org/data.html>;
 .
+
+<http://lod.sociam.org/source/snap-stanford-edu/dataset/phrase-cluster>
+   foaf:page <https://github.com/difrad/sociam-web-observatory/wiki/MemeTracker-phrase-cluster-data>;
+.
