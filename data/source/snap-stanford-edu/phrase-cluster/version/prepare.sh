@@ -23,7 +23,8 @@
 # When this script is invoked, the conversion cockpit is the current working directory.
 #
 
-cat source/clust-qt08080902w3mfq5.txt | awk -f ../../src/shift-B-and-C-records.awk  > manual/clust-qt08080902w3mfq5.csv
+cat        source/clust-qt08080902w3mfq5.txt | awk -f ../../src/shift-B-and-C-records.awk  > manual/clust-qt08080902w3mfq5.csv
+justify.sh source/clust-qt08080902w3mfq5.txt manual/clust-qt08080902w3mfq5.csv ../../src/shift-B-and-C-records.awk
 
 # Create the conversion trigger:
 cr-create-conversion-trigger.sh -w manual/clust-qt08080902w3mfq5.csv 
