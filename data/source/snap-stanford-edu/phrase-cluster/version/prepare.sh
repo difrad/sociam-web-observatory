@@ -24,3 +24,6 @@
 #
 
 cat source/clust-qt08080902w3mfq5.txt | awk -f ../../src/shift-B-and-C-records.awk  > manual/clust-qt08080902w3mfq5.csv
+
+# Create the conversion trigger:
+cr-create-conversion-trigger.sh -w manual/clust-qt08080902w3mfq5.csv 
