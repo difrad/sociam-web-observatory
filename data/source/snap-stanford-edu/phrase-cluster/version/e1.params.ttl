@@ -155,8 +155,8 @@
          ov:csvCol          5;
          ov:csvHeader       "QtFq";
          conversion:bundled_by :phrase_bundle;
-         conversion:label   "QtFq";
-         conversion:equivalent_property sio:count;
+         conversion:label   "Number of Mentions";
+         conversion:subproperty_of sio:count;
          conversion:comment "total frequency (number of mentions) of the phrase.";
          conversion:range   xsd:integer;
       ];
@@ -164,12 +164,10 @@
          ov:csvCol          6;
          ov:csvHeader       "Urls";
          conversion:bundled_by :phrase_bundle;
-         conversion:label   "Urls";
-         conversion:equivalent_property sio:count;
+         conversion:label   "Number of URLs";
+         conversion:subproperty_of sio:count;
          conversion:comment "number of urls where the phrase appeared (number of C records).";
-         #conversion:range_template  "[/sd]thing[.]";
          conversion:range   xsd:integer;
-         #conversion:range_name  "Thing";
       ];
       conversion:enhance [
          ov:csvCol          7;
@@ -177,7 +175,6 @@
          conversion:bundled_by :phrase_bundle;
          conversion:label   "QtStr";
          conversion:equivalent_property prov:value;
-         #conversion:subproperty_of      dcterms:identifier;
          conversion:comment "phrase string.";
          conversion:range   rdfs:Literal;
       ];
@@ -185,20 +182,27 @@
          ov:csvCol          8;
          ov:csvHeader       "QtId";
          conversion:bundled_by :phrase_bundle;
-         conversion:label   "QtId";
-         conversion:equivalent_property dcterms:identifier;
-         #conversion:subproperty_of      dcterms:identifier;
+         #conversion:label   "QtId";
+         #conversion:equivalent_property dcterms:identifier;
          conversion:comment "phrase id.";
-         conversion:range   rdfs:Literal;
+         #conversion:range   rdfs:Literal;
+         #conversion:object_search [
+         #   conversion:regex     "^(.*)$";
+         #   conversion:predicate dcterms:isPartOf;
+         #   conversion:object    "[/sd][#4]";
+         #];
+         conversion:equivalent_property dcterms:isPartOf;
+         conversion:range_template "[/sd][#4]";
+         conversion:range   rdfs:Resource;
       ];
       conversion:enhance [
          ov:csvCol          9;
          ov:csvHeader       "Tm";
-         conversion:eg      "2008-08-18 14:23:05";
          conversion:bundled_by [ ov:csvCol 12 ];
-         conversion:label   "Tm";
+         #conversion:label   "Tm";
          conversion:equivalent_property dcterms:created;
          conversion:comment "time when the article/post <Url>: was published.";
+         conversion:eg      "2008-08-18 14:23:05";
          conversion:pattern "YYYY-MM-dd HH:mm:ss";
          conversion:range   xsd:dateTime;
       ];
@@ -214,7 +218,7 @@
          ov:csvCol          11;
          ov:csvHeader       "UrlTy";
          conversion:bundled_by [ ov:csvCol 12 ];
-         conversion:label   "UrlTy";
+         #conversion:label   "UrlTy";
          conversion:equivalent_property rdf:type;
          conversion:comment "type of the url: B: blog, M: mainstream media.";
          conversion:range_template  "[/sd]vocab/[.]";
