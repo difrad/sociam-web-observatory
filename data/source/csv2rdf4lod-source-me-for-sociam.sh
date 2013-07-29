@@ -201,8 +201,8 @@ export CSV2RDF4LOD_CONVERT_ALWAYS_UPDATE_CONVERTER="false"
 #
 # a conversion:ProjectLevelEnvironmentVariable
 # a conversion:ActivityLevelEnvironmentVariable
-export CSV2RDF4LOD_CONVERT_OMIT_RAW_LAYER="true"
 export CSV2RDF4LOD_CONVERT_OMIT_RAW_LAYER="false"
+export CSV2RDF4LOD_CONVERT_OMIT_RAW_LAYER="true"
 
 #
 # Customize: Number of rows to include in an example subset.
