@@ -28,3 +28,4 @@ justify.sh source/clust-qt08080902w3mfq5.txt manual/clust-qt08080902w3mfq5.csv .
 
 # Create the conversion trigger:
 cr-create-conversion-trigger.sh -w manual/clust-qt08080902w3mfq5.csv 
+
