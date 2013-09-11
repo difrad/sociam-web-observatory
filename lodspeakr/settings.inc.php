@@ -1,11 +1,11 @@
 <?php
 
-$conf['endpoint']['local'] = 'http://lod.sociam.org/sparql';
+$conf['endpoint']['local'] = 'http://sociamvm-exp-001.ecs.soton.ac.uk/sparql';
 $conf['home'] = '/var/www/lodspeakr/';
-$conf['basedir'] = 'http://lod.sociam.org/';
+$conf['basedir'] = 'http://sociamvm-exp-001.ecs.soton.ac.uk/';
 $conf['debug'] = false;
 
-$conf['ns']['local']   = 'http://lod.sociam.org';
+$conf['ns']['local']   = 'http://sociamvm-exp-001.ecs.soton.ac.uk';
 
 
 $conf['mirror_external_uris'] = false;
