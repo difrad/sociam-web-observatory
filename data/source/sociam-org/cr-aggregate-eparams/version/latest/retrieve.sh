@@ -1,0 +1,1 @@
+/home/dd1y12/opt/prizms/repos/csv2rdf4lod-automation/bin/secondary/cr-aggregate-eparams.sh
